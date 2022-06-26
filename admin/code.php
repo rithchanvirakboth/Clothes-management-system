@@ -28,7 +28,7 @@
                         
             $query = "INSERT INTO users (Fullname, username, email, password, PhoneNum, Address, UserType, status) VALUES ('$Fullname','$username','$email','$password','$PhoneNum',
             '$Address','$UserType','$Status')";
-
+            
             $query_run = mysqli_query($conn, $query);
 
                 if($query_run)
@@ -37,13 +37,13 @@
                     header("Location: user.php");
                     exit(0);
                 }
-                else {
+                else 
+                {
                     $_SESSION['message'] = "Something went wrong!";
                     header("Location: add-user.php");
                     exit(0);
                 }
             }
-        
     }
 
     // UPDATE user
