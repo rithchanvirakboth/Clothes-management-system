@@ -74,9 +74,9 @@
                                                 <?= $row['totalbonus'] . "$"; ?>
                                             </td>
                                         </tr>
-                                        <input type="text" name="staff_id[]" value="<?=$row['staff_id']; ?>" class="form-control">
-                                        <input type="text" name="totalbonus[]" value="<?=$row['totalbonus']; ?>" class="form-control">
-                                        <input type="text" name="date[]" value="<?php echo $fromdate; ?>" class="form-control">
+                                        <input type="hidden" name="staff_id[]" value="<?=$row['staff_id']; ?>" class="form-control">
+                                        <input type="hidden" name="totalbonus[]" value="<?=$row['totalbonus']; ?>" class="form-control">
+                                        <input type="hidden" name="date[]" value="<?php echo $fromdate; ?>" class="form-control">
 
                                     <?php
                                         }

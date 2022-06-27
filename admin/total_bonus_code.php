@@ -1,7 +1,7 @@
 <?php 
 include ('authentication.php');
 
-//ADD INCOME 
+//ADD total bonus 
 if(isset($_POST['save']))
 {   
     $staff_id = $_POST['staff_id'];
